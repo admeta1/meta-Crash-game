@@ -1,0 +1,190 @@
+
+.graph-container {
+    width: 45%;
+  display: flex;
+  background-color: gold;
+  height: 600px;
+}
+.graph-container .graph-left-col {
+  width: 5%;
+  /* display: flex; */
+  flex-direction: column;
+  background-color: gray;
+  position: relative;
+}
+.graph-container .graph-left-col .top {
+  height: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  transform: rotate(90deg);
+
+
+
+}
+.graph-container .graph-left-col .bottom {
+  height: 50%;
+  text-align: center;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(90deg);
+}
+
+
+.graph-right-col{
+  padding: 1.25rem 1.375rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(160, 86, 86);
+}
+
+.bet-container-top{
+  background-color: skyblue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+}
+
+.button1{
+display: flex;
+padding: 8px 100px;
+
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: conic-gradient(from 1deg at 49.69% 53.00%,
+ #39DD00 0deg, #148E00 219.375deg, #169C00 360deg);
+
+
+}
+.bet-container-bottom{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgb(101, 81, 81);
+}
+.bet-container-amount{
+  /* display: flex;
+  flex-direction: column; */
+}
+.Amount-new{
+  display: flex;
+  flex-direction: raw;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.Amount-new-table{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+}
+.Amount-box1{
+
+    width: 48%;
+    height: 52px;
+    background: #24262b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+   
+}
+.Amount-box2{
+  /* border: 2px solid #147cc8; */
+  width: 48%;
+  height: 52px;
+  background: #24262b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.ten{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 10px;
+}
+.amount-10{
+  width: 19%;
+  height: 52px;
+  background: #24262b;
+  display: flex;
+  border-radius: 1px solid #147CC8;
+  justify-content: center;
+  align-items: center;
+}
+.amount-100{
+  width: 19%;
+  height: 52px;
+  background: #24262b;
+  display: flex;
+  border-radius: 1px solid #147CC8;
+  justify-content: center;
+  align-items: center;
+}
+.amount-1000{
+  width: 19%;
+  height: 52px;
+  background: #24262b;
+  display: flex;
+  border-radius: 1px solid #147CC8;
+  justify-content: center;
+  align-items: center;
+}
+.amount-10000{
+  width: 19%;
+  height: 52px;
+  background: #24262b;
+  display: flex;
+  border-radius: 1px solid #147CC8;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.all-common-button{
+  border-top: 2px solid gray;
+  display: flex;
+  flex-direction: raw;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+.all-common-button1{
+
+  display: flex;
+  flex-direction: raw;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+.all-common-button2{
+  
+  display: flex;
+  flex-direction: raw;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
