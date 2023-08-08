@@ -39,7 +39,7 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container-1">
       <div className="page">
         <div className="cover">
           <div className="login-heading">

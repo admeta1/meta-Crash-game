@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./advanced.css";
+import "./advanced.css";
 import {
   StarOutlined,
   HeartOutlined,
@@ -7,123 +7,123 @@ import {
   QuestionCircleOutlined,
   NodeIndexOutlined,
   InsertRowBelowOutlined,
-  ExclamationCircleOutlined
+  ExclamationCircleOutlined,
+  DollarOutlined,
+  LeftOutlined,
+  RightOutlined
+ 
 } from "@ant-design/icons";
 
 type Props = {};
 
-const manual: React.FC<Props> = () => {
+const Advanced: React.FC<Props> = () => {
     // const [activeTabs, setactiveTabs] = useState(0);
   return (
-    //     <div className="imp-container">
-    //     <div className="manual-c">
-    //       <button className="Manual">{"Manual"}</button>
-    //       <button className="Advanced">{"Advanced"}</button>
-    //     </div>
 
-    //     <div className="bet">
-    //     <button className="Bet Next round">{"Bet (Next rounded)"}</button>
-    //     </div>
-    //      <div className = "Amount">
-    //      <div className = "inr">
-
-    //         <h4>Amount</h4>
-    //         <h4>0 INR</h4>
-    //      </div>
-    //      </div>
-    //      <div className = "Amount-box1">
-    //         <h1>logo</h1>
-    //         <p>1.000000</p>
-    //      <div className = "Amount-box2">
-    // <p>/2</p>
-    // <p>x2</p>
-    // <p>
-    //     ^
-    //     ^
-    // </p>
-
-    //      </div>
-    //      </div>
-
-    //      <div className = "Auto cash">
-    //      <div className = "chance">
-
-    //         <h4>Auto cash out</h4>
-    //         <h4>Chance</h4>
-    //         <h4>0.99%</h4>
-    //      </div>
-    //      </div>
-    //      <div className = "Auto cash1">
-    //         <p>100.00</p>
-    //         <h1>x</h1>
-    //      </div>
-
-    //     <div className="Ten">
-    //       <div className="amount-10">
-    //       <p>10</p>
-    //       <p>100</p>
-    //       <p>100</p>
-    //       <p>10000</p>
-    //       </div>
-    //     </div>
-
-    //     <div className="star ">
-    //     <div className="new-star1 ">
-
-    //     <StarOutlined style={{ fontSize: "24px", color: "gold" }} />
-    //     <p>22766</p>
-    //     <HeartOutlined style={{ fontSize: "24px", color: "red" }} />
-    //      <p>22865</p>
-
-    //       <ShareAltOutlined style={{ fontSize: "24px", color: "blue" }} />
-    //     </div>
-    //     <div className="new-star2 ">
-    //     <QuestionCircleOutlined />
-    //     <NodeIndexOutlined />
-    //     <InsertRowBelowOutlined />
-
-    //     </div>
-    //     </div>
-    //   </div>
     <>
-      <div className="graph-container">
-        <div className="graph-left-col">
+     <div className="graph-container"> 
+         {/* <div className="graph-left-col">
           <div className="top active">Manual</div>
           <div className="bottom">Advance</div>
-        </div>
-
+        </div>  */}
 
         <div className="graph-right-col">
-             <div className="bet-container-top">
-             <div className="button1">
-              <h6>set</h6>
-              <h6>(next round)</h6>
-             </div>
-             </div>
-
-
-
-             <div className="bet-container-bottom">
-
-             <div className="bet-container-amount">
-             <div className = "Amount-new">
-             <h4>Amount</h4>
-             <ExclamationCircleOutlined />
-            <h4>0 INR</h4>
-            <h4>Auto cash out</h4>
-             <h4>Chance</h4>
-             <h4>0.99%</h4>
+          <div className="bet-container-top">
+            <div className="button1">
+              <h4>Bet</h4>
+              <h4>(next round)</h4>
+            </div>
           </div>
 
-          <div className = "Amount-new-table">
+          <div className="bet-container-bottom">
+            <div className="bet-container-amount">
+              <div className="Amount-new">
+                <div className="Amount-new1">
+                  <div className="Amount-new1-p1">
+                    <p className="Amount-new1-p1-h4">Amount</p>
+                    <div className="Amount-new1-p1-logo">
+                      <ExclamationCircleOutlined />
+                    </div>
+                  </div>
 
-        </div>
-        </div>
-        </div>
+                  <p className="Amount-new2-p2">  0 INR </p>
+                </div>
+                <div className="Amount-new2">
+                  <p className="Amount-p3">Auto cash out </p>
+                   
+                 
+                  <div className="Amount-p4">
+                    <span className="Amount-p4-1">Chance</span>
+                    <span className="Amount-p4-2">0.99%</span>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="Amount-new-table">
+              <div className="Amount-box1">
+                <div className="Amount-box-sm1">
+                  <DollarOutlined />
+                  <p>1.000000</p>
+                </div>
+                <div className="Amount-box-sm2">
+                  <p className="Amount-box-sms1">/2 </p>
+                  <p className="Amount-box-sms2">x2</p>
+                  <p className="Amount-box-sms3">MAX</p>
+                  
+                </div>
+              </div>
+              <div className="Amount-box2">
+                <span className="Amount-box-sp1">100.x</span>
+                  <div className="Amount-box-sms4">
+                <div className="Amount-box-sp2"><LeftOutlined /></div>
+                <div className="Amount-box-sp3"><RightOutlined /></div>
+              </div>
+              </div>
+            </div>
+
+            <div className="ten-top">
+              <div className="ten">
+                <div className="amount-10">
+                  <p>10</p>
+                </div>
+                <div className="amount-100">
+                  <p>100</p>
+                </div>
+                <div className="amount-1000">
+                  <p>1000</p>
+                </div>
+                <div className="amount-10000">
+                  <p>10000</p>
+                </div>
+              </div>
+
+            </div>
+             <div className="bottom-main-c ">
+          <div className="bottom-main-c-manual">Manual</div>
+          <div className="bottom-main-c-Advance">Advance</div>
+        </div> 
+            
+          </div>
+          <div className="all-common-button-main">
+            <div className="all-common-button1">
+              <StarOutlined />
+              <p>22856</p>
+              <HeartOutlined />
+              <p>22902</p>
+              <ShareAltOutlined />
+            </div>
+            <div className="all-common-button2">
+              <InsertRowBelowOutlined />
+              <NodeIndexOutlined />
+              <QuestionCircleOutlined />
+            </div>
+          </div>
         </div>
       </div>
     </>
   );
 };
 
-export default manual;
+export default Advanced;
