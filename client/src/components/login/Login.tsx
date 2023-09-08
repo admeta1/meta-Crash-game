@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, SubmitHandler } from "react-hook-form";
+import axios from "axios";
+
+
 
 type LoginFormInputs = {
   email: string;
@@ -34,8 +37,18 @@ const Login: React.FC = () => {
 
   const passwordValue = watch("password");
 
-  const onSubmit: SubmitHandler<LoginFormInputs> = (data) => {
-    console.log(data + "hello");
+  const onSubmit: SubmitHandler<LoginFormInputs> = async(data) => {
+    console.log(data);
+   try {
+    const response = await axios.post('http://192.168.68.133:3300/auth/login', data);
+    // Handle the successful response here
+    console.log(response.data); 
+
+    
+   } catch (error) {
+    console.log(error,'this is error');
+    
+   }
   };
 
   return (

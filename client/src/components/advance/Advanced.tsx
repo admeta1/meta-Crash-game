@@ -1,112 +1,78 @@
 import React, { useState } from "react";
 import "./advanced.css";
-import {
+import { EyeOutlined, 
   StarOutlined,
   HeartOutlined,
   ShareAltOutlined,
   QuestionCircleOutlined,
   NodeIndexOutlined,
   InsertRowBelowOutlined,
-  ExclamationCircleOutlined,
-  DollarOutlined,
-  LeftOutlined,
-  RightOutlined
- 
-} from "@ant-design/icons";
+   } from "@ant-design/icons";
 
 type Props = {};
 
 const Advanced: React.FC<Props> = () => {
-    // const [activeTabs, setactiveTabs] = useState(0);
   return (
-
     <>
-     <div className="graph-container"> 
-         {/* <div className="graph-left-col">
-          <div className="top active">Manual</div>
-          <div className="bottom">Advance</div>
-        </div>  */}
-
-        <div className="graph-right-col">
-          <div className="bet-container-top">
-            <div className="button1">
-              <h4>Bet</h4>
-              <h4>(next round)</h4>
+      
+      <div className="yellow-container">
+        <div className="yellow-container-top">
+          <div className="yellow-button">
+            <h4>Cash Out</h4>
+          </div>
+        </div>
+        <div className="simple-container">
+          <div className="simple-container1">
+            <div className="simple-container1-sm1"> Simple </div>
+            <div className="simple-container2-sm2">
+              <div className="simple-container2-l">
+                <EyeOutlined />
+              </div>
+              <div className="simple-container2-h"> Run</div>
             </div>
           </div>
-
-          <div className="bet-container-bottom">
-            <div className="bet-container-amount">
-              <div className="Amount-new">
-                <div className="Amount-new1">
-                  <div className="Amount-new1-p1">
-                    <p className="Amount-new1-p1-h4">Amount</p>
-                    <div className="Amount-new1-p1-logo">
-                      <ExclamationCircleOutlined />
-                    </div>
-                  </div>
-
-                  <p className="Amount-new2-p2">  0 INR </p>
-                </div>
-                <div className="Amount-new2">
-                  <p className="Amount-p3">Auto cash out </p>
-                   
-                 
-                  <div className="Amount-p4">
-                    <span className="Amount-p4-1">Chance</span>
-                    <span className="Amount-p4-2">0.99%</span>
-                   
-                  </div>
-                </div>
+          <div className="marti-container2">
+            <div className="marti-container2-sm1"> Simple </div>
+            <div className="marti-container2-sm2">
+              <div className="simple-container2-2l">
+                <EyeOutlined />
               </div>
+              <div className="simple-container2-2h"> Run</div>
+            </div>
+          </div>
+        </div>
+
+
+<div className="payout-main">
+          <div className="payout-main1">
+            <div className="payout-main-pm"> Payout Martingale </div>
+            <div className="payout-main1-pm1">
+              <div className="payout-main12-l">
+                <EyeOutlined />
+              </div>
+              <div className="payout-main1-h"> Run</div>
+            </div>
+          </div>
+          {/* -------------------- */}
+          <div className="add-container">
+            <div className="Add-script-btn"> 
+            <h2>Add script </h2>
             </div>
 
-            <div className="Amount-new-table">
-              <div className="Amount-box1">
-                <div className="Amount-box-sm1">
-                  <DollarOutlined />
-                  <p>1.000000</p>
-                </div>
-                <div className="Amount-box-sm2">
-                  <p className="Amount-box-sms1">/2 </p>
-                  <p className="Amount-box-sms2">x2</p>
-                  <p className="Amount-box-sms3">MAX</p>
-                  
-                </div>
-              </div>
-              <div className="Amount-box2">
-                <span className="Amount-box-sp1">100.x</span>
-                  <div className="Amount-box-sms4">
-                <div className="Amount-box-sp2"><LeftOutlined /></div>
-                <div className="Amount-box-sp3"><RightOutlined /></div>
-              </div>
-              </div>
-            </div>
+          </div>
+        </div>
+<div className=" text-use">
+<p className=" text-use-all">
+<QuestionCircleOutlined />
+Use of script is optional and players must take full responsibility for any attendant risks. We will not be held liable in this regard.Help?
+</p>
+</div>
 
-            <div className="ten-top">
-              <div className="ten">
-                <div className="amount-10">
-                  <p>10</p>
-                </div>
-                <div className="amount-100">
-                  <p>100</p>
-                </div>
-                <div className="amount-1000">
-                  <p>1000</p>
-                </div>
-                <div className="amount-10000">
-                  <p>10000</p>
-                </div>
-              </div>
-
-            </div>
-             <div className="bottom-main-c ">
+<div className="bottom-main-c ">
           <div className="bottom-main-c-manual">Manual</div>
           <div className="bottom-main-c-Advance">Advance</div>
         </div> 
-            
-          </div>
-          <div className="all-common-button-main">
+        <div className="all-common-button-main">
             <div className="all-common-button1">
               <StarOutlined />
               <p>22856</p>
@@ -120,8 +86,9 @@ const Advanced: React.FC<Props> = () => {
               <QuestionCircleOutlined />
             </div>
           </div>
-        </div>
+
       </div>
+   
     </>
   );
 };

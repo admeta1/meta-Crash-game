@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"></script> -->
+
+
+<body>
+    <script>
+ var y = 1;
+    var x = 0;
+    var inc = 0.01;
+
+    function setup() {
+    createCanvas(400, 400);
+    background(100)
+    frameRate(1000)
+    }
+
+    function draw() {
+    let prev_x = x;
+    let prev_y = y;
+    x = x + 0.5
+    y = y + y * inc;
+
+    noFill();
+    stroke(255, 0, 0, 255);
+    strokeWeight(3);
+    line(prev_x, height-prev_y, x, height-y);
+    }
+    </script>
+   
+</body>
+
+</html>

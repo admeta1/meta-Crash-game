@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 // import { useDispatch } from "react-redux";
 // import { getHomeNews } from "../../store/news";
 // import { signup } from "../../store/Authentication";
@@ -37,9 +38,20 @@ const SignUp: React.FC = () => {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = (data: FormData) => {
-    // dispatch(signup(data, navigate));
-    console.log(data, "hello");
+  const onSubmit = async (data: FormData) => {
+   console.log(data);
+    try {
+      // Make a POST request to the signup URL
+      const response = await axios.post("http://192.168.68.133:3300/auth/signup", data);
+
+      // Handle the response, e.g., show a success message or navigate to a new page
+      console.log(response.data);
+      navigate("/"); // Redirect after successful signup
+    } catch (error) {
+      // Handle errors, show error messages, etc.
+      console.error("Error signing up", error);
+    }
+
   };
 
   return (

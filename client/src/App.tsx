@@ -6,7 +6,9 @@ import SignUp from "./components/SignUp/SignUp";
 import Manual from "./components/manual/manual";
 import Advanced from "./components/advance/Advanced";
 import BetTable from "./components/BetTable/BetTable";
-import Crashgraph from "./components/graph/Crashgraph";
+import CrashGame from "./components/graphh/Crashgraphh";
+import Newgraph from "./components/graph/LineChart";
+import LineChart from "./components/graph/LineChart";
 
 function App() {
   return (
@@ -17,9 +19,11 @@ function App() {
           <Route path="/register" element={<SignUp />} />
           <Route path="/manual" element={<Manual />} />
           <Route path="/advanced" element={<Advanced />} />
-          <Route path="/bettable" element={<BetTable />} />
-          <Route path="/graph" element={<Crashgraph />} />
-       
+          <Route path="/graphh" element={<CrashGame />} />
+          <Route path="/chart" element={<LineChart />} />
+          {/* <Route path="/graph" element={<Newgraph />} /> */}
+
+          {/* <Route path="/bettable" element={<BetTable />} /> */}
         </Routes>
       </Router>
     </div>
